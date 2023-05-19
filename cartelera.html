@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTELERA</title>
+    <link rel="stylesheet" href="fuentes/Montserrat-Regular.ttf">
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+
+    <section id="cartelera">
+
+        <div class="header">
+            <a href="#"><img src="media/menu.png" alt="Icono Menu" ></a>
+            <a href="#"><img src="media/icon-logo.png" alt="Icono Logo"></a>
+            <a href="#"><img src="media/user.png" alt="Perfil"></a>
+        </div>
+
+
+        <div class="cont-botones">
+            <a href="#" class="active" id="btn-aventuras">Aventuras</a>
+            <a href="#" id="btn-animadas" onclick="animadas();">Animadas</a>
+            <a href="#" id="btn-dramas">Dramas</a>
+        </div>
+
+
+
+        <div class="cont-caratulas" id="aventutas">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+
+            <h3>Estrenos:</h3>
+            <hr class="border">
+
+            <!-- contenedor de tarjetas -->
+            <div class="cont-scroll">
+                <a href="" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+            </div>
+
+            <h3>Proximamente:</h3>
+            <hr class="border">
+    
+                <!-- contenedor de tarjetas -->
+            <div class="cont-scroll">
+                <a href="" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+            </div>
+
+        </div>
+
+        <div class="cont-caratulas ocultar" id="animadas" >
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+
+                <h3>Estrenos:</h3>
+                <hr class="border">
+                
+                <!-- contenedor de tarjetas -->
+                <div class="cont-scroll">
+                    <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+                </div>
+
+                <h3>Proximamente:</h3>
+                <hr class="border">
+    
+                    <!-- contenedor de tarjetas -->
+                <div class="cont-scroll">
+                    <a href="" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                    <a href="" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                    <a href="" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                    <a href="" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>  
+                 </div>
+        </div>
+
+        <div class="cont-caratulas ocultar" id="dramas" >
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+
+            <h3>Estrenos:</h3>
+            <hr class="border">
+            
+            <!-- contenedor de tarjetas -->
+            <div class="cont-scroll">
+                <a href="" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+            </div>
+
+            
+            <h3>Proximamente:</h3>
+            <hr class="border">
+
+                <!-- contenedor de tarjetas -->
+            <div class="cont-scroll">
+                <a href="" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>  
+             </div>
+
+
+
+        </div>
+    </section>
+
+
+    <script src="js/Main.js"></script>
+</body>
+</html>
