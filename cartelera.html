@@ -13,32 +13,32 @@
     <section id="cartelera">
 
         <div class="header">
-            <a href="#"><img src="media/menu.png" alt="Icono Menu" ></a>
+            <a onclick="activarMenu()" href="#"><img src="media/menu.png" alt="Icono Menu" ></a>
             <a href="#"><img src="media/icon-logo.png" alt="Icono Logo"></a>
             <a href="#"><img src="media/user.png" alt="Perfil"></a>
         </div>
 
 
         <div class="cont-botones">
-            <a href="#" class="active" id="btn-aventuras">Aventuras</a>
+            <a href="#" class="active" id="btn-aventuras" onclick="aventuras();">Aventuras</a>
             <a href="#" id="btn-animadas" onclick="animadas();">Animadas</a>
-            <a href="#" id="btn-dramas">Dramas</a>
+            <a href="#" id="btn-dramas" onclick="dramas();">Dramas</a>
         </div>
 
 
 
-        <div class="cont-caratulas" id="aventutas">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+        <div class="cont-caratulas active" id="aventutas">
+            <p>Aventuras,  ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
 
             <h3>Estrenos:</h3>
             <hr class="border">
 
             <!-- contenedor de tarjetas -->
             <div class="cont-scroll">
-                <a href="" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
             </div>
 
             <h3>Proximamente:</h3>
@@ -46,16 +46,16 @@
     
                 <!-- contenedor de tarjetas -->
             <div class="cont-scroll">
-                <a href="" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
             </div>
 
         </div>
 
-        <div class="cont-caratulas ocultar" id="animadas" >
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+        <div class="cont-caratulas active" id="animadas" >
+                <p>Animadas, ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
 
                 <h3>Estrenos:</h3>
                 <hr class="border">
@@ -80,19 +80,19 @@
                  </div>
         </div>
 
-        <div class="cont-caratulas ocultar" id="dramas" >
+        <div class="cont-caratulas active" id="dramas" >
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+            <p>Dramas, ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
 
             <h3>Estrenos:</h3>
             <hr class="border">
             
             <!-- contenedor de tarjetas -->
             <div class="cont-scroll">
-                <a href="" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
-                <a href="" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
             </div>
 
             
@@ -110,6 +110,39 @@
 
 
         </div>
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <img class="img-caratula" src="media/mario.jpg" alt="mario-image ">
+            <a href="#" class="close" onclick="cerrarM()">X</a>
+            <a href="#" class="play"><img src="media/boton-de-play (1).png" alt="boton-play"></a>
+            <h3>Super Mario <br> Bros. La pelicula</h3>
+            <hr>
+            <p>Estrenos: 06 de abril 2023</p>
+            <p>Accion, Comedia</p>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vero aperiam natus earum ipsam odio laboriosam harum autem error quo? Perspiciatis esse dolorum, natus eius iure debitis necessitatibus laboriosam blanditiis.</p>
+            
+        </div>
+
+        <!-- menu -->
+        <div id="menu">
+            <a href="#">Editar mi cuenta</a>
+            <a onclick="activarMenu()" href="#" class="btn-menu"><img src="media/menu.png" alt="menu"></a>
+            <hr>
+           <ul>
+
+               <li><a href="#">-Home</a></li>
+               <li><a href="#">-Home</a></li>
+               <li><a href="#">-Home</a></li>
+               <li><a href="#">-Home</a></li>
+               <li><a href="#">-Home</a></li>
+               <li><a href="#">-Home</a></li>
+               <li><a href="#">-HOme</a></li>
+               <li><a href="#">-home</a></li>
+           </ul>
+           <a href="">Cerrar Secion</a>
+        </div>
+
     </section>
 
 

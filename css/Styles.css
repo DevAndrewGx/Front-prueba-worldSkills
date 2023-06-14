@@ -122,7 +122,6 @@ body {
     border: 2px solid #fff;
     padding: 15px 18px;
     border-radius: 8px;
-    
 }
 
 
@@ -154,6 +153,7 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
     background-color: var(--primary-color);
+    position: relative;
 }
 
 
@@ -195,7 +195,7 @@ body {
     padding: 12px 0;
 }
 
-.cont-botones a.active{
+.cont-botones a.active{ 
     background-color: var(--secundary-color);
 }
 
@@ -205,7 +205,12 @@ body {
 .cont-caratulas {
     width: 90%;
     margin: 0 auto;
-    
+    display: none;
+}
+
+
+.cont-caratulas.active {
+    display: block;
 }
 
 
@@ -245,13 +250,134 @@ body {
     border: 4px solid #fff;
     border-radius: 10px 0 10px 0;
     margin: 0 1px;
+    transition: 0.3s;
+    
 }
 
-.ocultar{
-    display: none;
+.cont-scroll a img:hover {
+    transform: scale(1.1);
+}
+
+.modal  {
+    background: #221039e8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 20px;
+    display: none;  
+}
+
+.modal .img-caratula {
+    width: 86%;
+    /* alas imagenes son como textos por eso no se puede alinear con margin solo los contendores */
+}
+
+.modal .close {
+    position: absolute;
+    z-index: 999;
+    top: 18px;
+    right: 22px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.modal .play {
+    position: absolute;
+    z-index: 999;
+    top: 190px;
+    right: 0;
+    left: 0;
+}
+
+.play img {
+    width: 60px;
+}
+
+.modal h3 {
+    text-align: left;
+    color: #fff;
+    font-size: 24px;
+    padding-left: 22px;
+    padding-top: 14px;
+}
+
+.modal hr {
+    margin-left: 24px;
+    width: 35%;
+    border-color: var(--secundary-color);
+    margin-bottom: 20px;
+    height: 2px;
+    background: var(--secundary-color);
 }
 
 
+.modal p {
+    padding-left: 24px;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    margin-right: 24px;
+    
+}
 
 
+.modal.active {
+    display: block;
+}
+/* menu */
+#menu  {
+    width: 65%;
+    border-left: 2px solid var(--secundary-color);
+    border-right: 3px solid var(--secundary-color);
+    background: var(--primary-color);
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: -400px;
+    height: 88%;
+    padding-top: 100px;
+    padding-left: 40px;
+    transition: 0.5s;
+}   
+#menu.active {
+    left: 0;
+}
 
+#menu a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#menu a.btn-menu img {
+    width: 40px;
+    position: absolute;
+    top: 13px;
+    right: -20px;
+    border: 2px solid var(--secundary-color);
+    border-radius: 50%;
+}
+
+#menu hr {
+    width: 35%;
+    border-color: var(--secundary-color);
+    margin-bottom: 20px;
+    height: 2px;
+    background: var(--secundary-color);
+}
+
+#menu ul {
+    padding-top: 120px;
+    padding-bottom:  120px;
+}
+
+#menu li {
+    list-style: none;
+}
+/* z.index es apra que quede siempre por encima */
